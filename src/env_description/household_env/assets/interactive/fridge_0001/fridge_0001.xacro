@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<robot name="fridge_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:macro name="fridge_0001" params="prefix:=fridge_0001 parent:=world joint_type:=fixed xyz rpy scale:=2">
+        <xacro:property name="mesh_dir" value="package://env_description/household_env/assets/interactive/fridge_0001" />
+        <!-- fridge_0001 -->
+        <link name="${prefix}">
+            <inertial>
+                <origin xyz="0 0 0" />
+                <mass value="66.55810409914356" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/none_motion.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="-0.24 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/none_motion.obj" rpy="0 0 0" scale="${scale-0.24} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+
+
+        <joint name="${prefix}_joint_structure_joint" type="${joint_type}">
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <parent link="${parent}" />
+            <child link="${prefix}" />
+        </joint>
+
+
+        <link name="${prefix}_dof_rootd_Aa001_r">
+            <inertial>
+                <origin xyz="${-0.0120242 * scale} ${0.186991 * scale} ${0.258249 * scale}" />
+                <mass value="3.4723016707927337" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="${-0.0120242 * scale} ${0.186991 * scale} ${0.258249 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Aa001_r.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="${-0.0120242 * scale} ${0.186991 * scale} ${0.258249 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Aa001_r.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_dof_rootd_Aa001_r_joint" type="revolute">
+            <origin xyz="${0.0120242 * scale} ${-0.186991 * scale} ${-0.258249 * scale}" rpy="0 0 1.65079632679" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_dof_rootd_Aa001_r" />
+            <axis xyz="-0.00265158 -0.000674044 -0.999996" />
+            <dynamics friction="0.5867301641997079" />
+            <limit effort="0.0" velocity="0.5" lower="0.0" upper="1.62" />
+        </joint>
+
+
+        <link name="${prefix}_dof_rootd_Aa002_r">
+            <inertial>
+                <origin xyz="${-0.0111599 * scale} ${0.187214 * scale} ${-0.489751 * scale}" />
+                <mass value="6.779880496514063" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="${-0.0111599 * scale} ${0.187214 * scale} ${-0.489751 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Aa002_r.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0.40 0.03 -0.6" rpy="0 0 -0.1"/>
+                <geometry>
+                    <!-- <mesh filename="${mesh_dir}/dof_rootd_Aa002_r.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" /> -->
+                    <box size="0.8 0.14 1.2" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_dof_rootd_Aa002_r_joint" type="revolute">
+            <origin xyz="${0.0111599 * scale} ${-0.187214 * scale} ${0.489751 * scale}" rpy="0 0 1.65079632679" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_dof_rootd_Aa002_r" />
+            <axis xyz="0.00129135 0.000292879 -0.999999" />
+            <dynamics friction="0.6519199645177302" />
+            <limit effort="0.0" velocity="0.5" lower="0.0" upper="1.62" />
+        </joint>
+
+
+        <link name="${prefix}_dof_rootd_Ba001_t">
+            <inertial>
+                <origin xyz="${0.315477 * scale} ${-0.235638 * scale} ${0.483744 * scale}" />
+                <mass value="8.103692484278243" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="${0.315477 * scale} ${-0.235638 * scale} ${0.483744 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba001_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="${0.315477 * scale} ${-0.235638 * scale} ${0.483744 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba001_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_dof_rootd_Ba001_t_joint" type="fixed">
+            <origin xyz="${-0.315477 * scale} ${0.235638 * scale} ${-0.483744 * scale}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_dof_rootd_Ba001_t" />
+            <axis xyz="1.0 0.0 2.22045e-16" />
+            <dynamics friction="0.7296427670420113" />
+            <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.17546906696179498" />
+        </joint>
+
+
+        <link name="${prefix}_dof_rootd_Ba002_t">
+            <inertial>
+                <origin xyz="${0.31548 * scale} ${-0.235638 * scale} ${0.367993 * scale}" />
+                <mass value="4.070265664291003" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="${0.31548 * scale} ${-0.235638 * scale} ${0.367993 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba002_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="${0.31548 * scale} ${-0.235638 * scale} ${0.367993 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba002_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_dof_rootd_Ba002_t_joint" type="fixed">
+            <origin xyz="${-0.31548 * scale} ${0.235638 * scale} ${-0.367993 * scale}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_dof_rootd_Ba002_t" />
+            <axis xyz="1.0 0.0 2.22045e-16" />
+            <dynamics friction="0.22004291780520058" />
+            <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.1963220250432134" />
+        </joint>
+
+        <link name="${prefix}_dof_rootd_Ba003_t">
+            <inertial>
+                <origin xyz="${0.315993 * scale} ${-0.235638 * scale} ${0.241258 * scale}" />
+                <mass value="4.627750398617074" />
+                <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+            </inertial>
+            <visual>
+                <origin xyz="${0.315993 * scale} ${-0.235638 * scale} ${0.241258 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba003_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="${0.315993 * scale} ${-0.235638 * scale} ${0.241258 * scale}" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/dof_rootd_Ba003_t.obj" rpy="0 0 0" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_dof_rootd_Ba003_t_joint" type="fixed">
+            <origin xyz="${-0.315993 * scale} ${0.235638 * scale} ${-0.241258 * scale}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_dof_rootd_Ba003_t" />
+            <axis xyz="1.0 0.0 2.22045e-16" />
+            <dynamics friction="0.6820094481200811" />
+            <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.12175316474203558" />
+        </joint>
+
+    </xacro:macro>
+</robot>
+        

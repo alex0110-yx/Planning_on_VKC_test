@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+
+<robot name="door_8966_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:macro name="door_8966" params="prefix:=door_8966 parent:=world joint_type:=fixed xyz rpy scale:=1">
+		<xacro:property name="mesh_dir" value="package://env_description/household_env/assets/interactive/door_8966/textured_objs" />
+		<link name="${prefix}_base">
+			<!-- <visual name="outside_frame-1">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-3.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+				</geometry>
+			</visual>
+			<visual name="outside_frame-1">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-4.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+				</geometry>
+			</visual> -->
+			<!-- <collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-3.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-4.obj" />
+				</geometry>
+			</collision> -->
+		</link>
+
+		<joint name="${prefix}_joint_structure_joint" type="${joint_type}">
+			<origin xyz="${xyz}" rpy="${rpy}" />
+			<parent link="${parent}" />
+			<child link="${prefix}_base" />
+		</joint>
+
+		<link name="${prefix}_link_0"></link>
+		<joint name="${prefix}_joint_0" type="fixed">
+			<origin rpy="1.570796326794897 0 -1.570796326794897" xyz="0 0 0" />
+			<child link="${prefix}_link_0" />
+			<parent link="${prefix}_base" />
+		</joint>
+		<link name="${prefix}_link_1">
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-7.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-3.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-0.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-4.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-11.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-14.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-8.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-13.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-17.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<!-- <visual name="surface_board-16">
+			<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000"/>
+			<geometry>
+				<mesh filename="${mesh_dir}/new-1.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+			</geometry>
+		</visual> -->
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-9.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<!-- <visual name="surface_board-16">
+			<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000"/>
+			<geometry>
+				<mesh filename="${mesh_dir}/new-2.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+			</geometry>
+		</visual> -->
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-10.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-16.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-15.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<visual name="surface_board-16">
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-12.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<box size="1.1 1.9 0.08" />
+				</geometry>
+			</collision>
+			<!-- <collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-7.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-3.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-0.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/new-4.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-11.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-14.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-8.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-13.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-17.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+			<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000"/>
+			<geometry>
+				<mesh filename="${mesh_dir}/new-1.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+			</geometry>
+		</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-9.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+			<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000"/>
+			<geometry>
+				<mesh filename="${mesh_dir}/new-2.obj" scale="${scale+0.2} ${scale-0.1} 0.6"/>
+			</geometry>
+		</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-10.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-16.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-15.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.5266634119514137 -0.8931909999999998 0.03000" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-12.obj" scale="${scale+0.2} ${scale-0.1} 0.6" />
+				</geometry>
+			</collision> -->
+		</link>
+		<joint name="${prefix}_joint_1" type="revolute">
+			<origin xyz="-0.5266634119514137 0.8931909999999998 0.03000" />
+			<axis xyz="0 -1 0" />
+			<child link="${prefix}_link_1" />
+			<parent link="${prefix}_link_0" />
+			<limit effort="0.0" velocity="0.5" lower="-1.57" upper="0.01" />
+		</joint>
+		<link name="${prefix}_link_2">
+			<visual name="fixed_part-5">
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-23.obj" />
+				</geometry>
+			</visual>
+			<visual name="fixed_part-5">
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-22.obj" />
+				</geometry>
+			</visual>
+			<visual name="fixed_part-6">
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-19.obj" />
+				</geometry>
+			</visual>
+			<visual name="fixed_part-6">
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-20.obj" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<cylinder radius="0.03" length="0.2"/>
+				</geometry>
+			</collision>
+			<!-- <collision>
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-23.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-22.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-19.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="-0.3412588668976835 0.06464413310231656 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-20.obj" />
+				</geometry>
+			</collision> -->
+		</link>
+		<joint name="${prefix}_joint_2" type="fixed">
+			<origin xyz="0.8879222788490971 -0.9878351331023164 0.03000" />
+			<axis xyz="0 0 1" />
+			<child link="${prefix}_link_2" />
+			<parent link="${prefix}_link_1" />
+		</joint>
+
+	</xacro:macro>
+
+</robot>
+        

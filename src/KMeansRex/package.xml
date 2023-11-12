@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>kmeans_rex</name>
+    <version>0.0.1</version>
+    <description>kmeans rex</description>
+    <author email="todo@todo.todo">todo</author>
+    <maintainer email="todo@todo.todo">todo</maintainer>
+    <license>todo</license>
+    <buildtool_depend>cmake</buildtool_depend>
+    <buildtool_depend>catkin</buildtool_depend>
+    <buildtool_depend>boost</buildtool_depend>
+
+    <depend>eigen</depend>
+    <export>
+        <build_type>cmake</build_type>
+    </export>
+</package>

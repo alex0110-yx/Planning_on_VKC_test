@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="cup_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="cup" params="prefix:=cup xyz rpy scale:=1">
+    <link name="${prefix}_cup_base_link"/>
+    <joint name="${prefix}_cup_base_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}" />
+      <parent link="world" />
+      <child link="${prefix}_cup_base_link" />
+      <axis xyz="0 0 0" />
+    </joint>
+
+    <link name="${prefix}_cup_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <mesh filename="package://env_description/household_env/assets/rigid/meshes/cup_green.obj" scale="${scale} ${scale} ${scale}"/>
+        </geometry>
+        <!-- <material name="">
+          <color rgba="0.564705882352941 0.564705882352941 0.564705882352941 1" />
+        </material> -->
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <mesh filename="package://env_description/household_env/assets/rigid/meshes/cup_green.obj" scale="${scale} ${scale} ${scale}"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}_cup_joint" type="fixed">
+      <origin xyz="-0.019 0 0" rpy="0 0 0" />
+      <parent link="${prefix}_cup_base_link" />
+      <child link="${prefix}_cup_link" />
+      <axis xyz="0 0 0" />
+    </joint>
+  </xacro:macro>
+</robot>

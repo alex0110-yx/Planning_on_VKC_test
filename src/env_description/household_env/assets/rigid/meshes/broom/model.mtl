@@ -1,0 +1,105 @@
+newmtl ID6
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd _0014_DarkSalmon.jpg 
+
+newmtl ID16
+Ka 0.000000 0.000000 0.000000
+Kd 0.137255 0.137255 0.137255
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID16 - Default Texture.psd 
+
+newmtl ID29
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd Color_007.jpg 
+
+newmtl ID46
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd Color_002.jpg 
+
+newmtl ID82
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __0002_MediumVioletRed_1.jpg 
+
+newmtl ID97
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd _0002_MediumVioletRed.jpg 
+
+newmtl ID125
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __0002_MediumVioletRed_2.jpg 
+

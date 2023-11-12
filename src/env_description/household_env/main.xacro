@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="household_env">
+    <xacro:property name="asset_path" value="$(find env_description)/household_env/assets" />
+    <xacro:property name="pi" value="3.1415926536" />
+    <xacro:include filename="${asset_path}/rigid/table_25569.xacro" />
+    <xacro:include filename="${asset_path}/rigid/table_rect.xacro" />
+    <xacro:include filename="${asset_path}/wall.xacro" />
+    <xacro:include filename="${asset_path}/interactive/door_8966/mobility.xacro" />
+    <xacro:include filename="${asset_path}/interactive/oven_101931/mobility.xacro" />
+    <xacro:include filename="${asset_path}/interactive/cabinet_48479/mobility.xacro" />
+    <xacro:include filename="${asset_path}/rigid/bed.xacro" />
+    <xacro:include filename="${asset_path}/interactive/drawer/drawer.xacro" />
+    <xacro:include filename="${asset_path}/interactive/fridge_0001/fridge_0001.xacro" />
+    <xacro:include filename="${asset_path}/rigid/sofa.xacro" />
+    <xacro:include filename="${asset_path}/rigid/tv.xacro" />
+    <xacro:include filename="${asset_path}/rigid/pot.xacro" />
+    <xacro:include filename="${asset_path}/rigid/kitchen.xacro" />
+    <xacro:include filename="${asset_path}/interactive/door_8936/mobility.xacro" />
+    <xacro:include filename="${asset_path}/interactive/dishwasher_12065/mobility.xacro" />
+    <xacro:include filename="${asset_path}/rigid/coffee_table.xacro" />
+    <xacro:include filename="${asset_path}/rigid/swivel_chair.xacro" />
+    <xacro:include filename="${asset_path}/rigid/bar_chair.xacro" />
+    <xacro:include filename="${asset_path}/interactive/fixed_13_cabinet/fixed_13_cabinet.xacro" />
+    <xacro:include filename="${asset_path}/rigid/cup.xacro" />
+    <xacro:include filename="${asset_path}/rigid/broom.xacro" />
+    <xacro:include filename="${asset_path}/rigid/ashcan.xacro" />
+    <xacro:include filename="${asset_path}/rigid/trash.xacro" />
+
+    <!-- +x: down, -x: up, +y: right, -y: left-->
+    <link name="world" />
+    <xacro:wall xyz="0 0 0" rpy="0 0 0" />
+    <xacro:door_8936 xyz="2 -3.95 0.92" rpy="0 0 -${pi/2}" />
+
+    <!-- bedroom-->
+    <xacro:table_25569 xyz="-2.5 0.4 0" rpy="0 0 ${pi/2}" scale="1.05" />
+    <xacro:door_8966 xyz="-0.06 0.56 0.9" rpy="0 0 ${pi}" scale="1.1" />
+    <xacro:bed xyz="-2.7 2.8 0" rpy="0 0 -${pi/2}" scale="0.9" />
+    <xacro:drawer xyz="-1.65 3.7 0.25" rpy="0 0 -${pi/2}" />
+    <xacro:swivel_chair xyz="-2.5 1.1 0" rpy="0 0 ${-pi/2}" scale="1.2" />
+    <xacro:fixed_13_cabinet xyz="-0.25 2.8 0.6" rpy="0.0 0 0" scale="1.4" />
+
+    <!-- kitchen -->
+    <xacro:kitchen xyz="-2.25 -2.02 0" rpy="0 0 0" scale="1.15" />
+    <xacro:fridge_0001 xyz="0.2 -3.20 0.88" rpy="${pi} 0 ${pi/2}" scale="1.75" />
+    <xacro:dishwasher xyz="-3.1 -0.475 0.6" rpy="0 0 ${pi}" scale="0.45" />
+    <xacro:coffee_table xyz="-0.9 -1.0 0" rpy="${pi/2} 0 ${pi}" scale="1.4" />
+    <xacro:bar_chair xyz="-0.4 -1.2 0" rpy="0 ${pi/2} ${pi}" scale="1" />
+    <xacro:bar_chair prefix="bar_chair_2" xyz="-0.4 -0.4 0" rpy="0 ${pi/2} ${pi}" scale="1" />
+    <xacro:cup xyz="0.43 -3.32 0.68" rpy="${-pi/2} 0 ${pi}" scale="0.001" />
+    <!-- <xacro:cup xyz="-0.63 -1.6 1.11" rpy="-1.5707963 0 0" scale="0.001"/> -->
+    <!-- <xacro:cup xyz="1.5 1.9 0.75" rpy="${-pi/2} 0 0.0" scale="0.001" /> -->
+
+    <!-- living room -->
+    <xacro:cabinet_48479 xyz="3.28 -1 0" rpy="0 0 ${pi}" scale="1.25" />
+    <xacro:table_rect xyz="1.7 2.5 0.05" rpy="0 0 0" />
+    <xacro:sofa xyz="3.02 2.5 0" rpy="0 0 ${pi}" />
+    <xacro:tv xyz="0.10 2.5 0.6" rpy="0 0 0" scale="2.25" />
+    <xacro:pot xyz="3.26 3.79 0" rpy="0 0 0" />
+    <xacro:trash xyz="2.32 2.45 0" rpy="0 0 0 " />
+    <xacro:broom xyz="3.28 0.5 0" rpy="0 0 0" />
+    <xacro:ashcan xyz="3.2 1.1 0" rpy="0 0 0" />
+    <!-- 
+    <link name="box_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.8 0.8 0.8" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.8 0.8 0.8" scale="0.8 1 0.8" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="box_joint" type="fixed">
+        <origin xyz="-1 -2.5 0.5" rpy="0 0 0" />
+        <parent link="world" />
+        <child link="box_link" />
+        <axis xyz="0 0 0" />
+    </joint> -->
+</robot>

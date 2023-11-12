@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<robot name="partnet_157d99a639b9b9aa5dd29c13c4b9a983" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:macro name="door_8936" params="prefix:=door_8936 parent:=world joint_type:=fixed xyz rpy scale:=1">
+        <xacro:property name="mesh_dir" value="package://env_description/household_env/assets/interactive/door_8936/textured_objs" />
+        <link name="${prefix}_base" />
+
+        <joint name="${prefix}_joint_structure_joint" type="${joint_type}">
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <parent link="${parent}" />
+            <child link="${prefix}_base" />
+        </joint>
+
+        <link name="${prefix}_link_0">
+            <visual name="movable_part-10">
+                <origin xyz="0.3490552488083982 0.10823772994325659 0.0601550000000004" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/original-3.obj" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0.3490552488083982 0.10823772994325659 0.0601550000000004" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/original-3.obj" />
+                </geometry>
+            </collision>
+        </link>
+        <joint name="${prefix}_joint_0" type="fixed">
+            <origin xyz="-0.3490552488083982 -0.10823772994325659 -0.0601550000000004" />
+            <axis xyz="0 0 -1" />
+            <child link="${prefix}_link_0" />
+            <parent link="${prefix}_link_2" />
+            <limit effort="0.0" velocity="0.5" lower="-0.0" upper="1.5707963267948966" />
+        </joint>
+        <link name="${prefix}_link_1">
+            <visual name="movable_part-6">
+                <origin xyz="0.3490552488083982 0.10823772994325659 0.0601550000000004" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/original-2.obj" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0.3490552488083982 0.10823772994325659 0.0601550000000004" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/original-2.obj" />
+                </geometry>
+            </collision>
+        </link>
+        <joint name="${prefix}_joint_1" type="fixed">
+            <origin xyz="-0.3490552488083982 -0.10823772994325659 -0.0601550000000004" />
+            <axis xyz="0 0 -1" />
+            <child link="${prefix}_link_1" />
+            <parent link="${prefix}_link_2" />
+            <limit effort="0.0" velocity="0.5" lower="-0.0" upper="1.5707963267948966" />
+        </joint>
+        <link name="${prefix}_link_2">
+            <visual name="surface_board-11">
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-2.obj" />
+                </geometry>
+            </visual>
+            <visual name="fixed_part-9">
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-1.obj" />
+                </geometry>
+            </visual>
+            <visual name="fixed_part-5">
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-0.obj" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-2.obj" />
+                </geometry>
+            </collision>
+            <collision>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-1.obj" />
+                </geometry>
+            </collision>
+            <collision>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/new-0.obj" />
+                </geometry>
+            </collision>
+        </link>
+        <joint name="${prefix}_joint_2" type="fixed">
+            <origin rpy="1.570796326794897 0 -1.570796326794897" xyz="0 0 0" />
+            <child link="${prefix}_link_2" />
+            <parent link="${prefix}_base" />
+        </joint>
+    </xacro:macro>
+</robot>

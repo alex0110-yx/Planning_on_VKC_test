@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+
+<robot name="fridge_robot" >
+
+    <link name="world" />
+
+    <!-- fridge_0001 -->
+    <link name="fridge_0001">
+        <inertial>
+            <origin xyz="0 0 0" />
+            <mass value="66.55810409914356" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/none_motion.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/none_motion.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <joint name="joint_structure" type="fixed">
+        <origin xyz="0.000 0.000 0.000" rpy="0 0 0" />
+        <parent link="world" />
+        <child link="fridge_0001" />
+    </joint>
+
+
+    
+    <link name="dof_rootd_Aa001_r">
+        <inertial>
+            <origin xyz="-0.0120242 0.186991 0.258249" />
+            <mass value="3.4723016707927337" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.0120242 0.186991 0.258249" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Aa001_r.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="-0.0120242 0.186991 0.258249" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Aa001_r.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="dof_rootd_Aa001_r" type="revolute">
+        <origin xyz="0.0120242 -0.186991 -0.258249" rpy="0 0 1.65079632679" />
+        <parent link="fridge_0001" />
+        <child link="dof_rootd_Aa001_r" />
+        <axis xyz="-0.00265158 -0.000674044 -0.999996" />
+        <dynamics friction="0.5867301641997079" />
+        <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.8011998335445056"/>
+    </joint>
+    
+        
+    
+    <link name="dof_rootd_Aa002_r">
+        <inertial>
+            <origin xyz="-0.0111599 0.187214 -0.489751" />
+            <mass value="6.779880496514063" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.0111599 0.187214 -0.489751" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Aa002_r.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="-0.0111599 0.187214 -0.489751" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Aa002_r.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="dof_rootd_Aa002_r" type="revolute">
+        <origin xyz="0.0111599 -0.187214 0.489751" rpy="0 0 1.65079632679" />
+        <parent link="fridge_0001" />
+        <child link="dof_rootd_Aa002_r" />
+        <axis xyz="0.00129135 0.000292879 -0.999999" />
+        <dynamics friction="0.6519199645177302" />
+        <limit effort="0.0" velocity="0.5" lower="0.0" upper="1.231625295881653"/>
+    </joint>
+    
+        
+    
+    <link name="dof_rootd_Ba001_t">
+        <inertial>
+            <origin xyz="0.315477 -0.235638 0.483744" />
+            <mass value="8.103692484278243" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="0.315477 -0.235638 0.483744" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba001_t.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.315477 -0.235638 0.483744" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba001_t.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="dof_rootd_Ba001_t" type="prismatic">
+        <origin xyz="-0.315477 0.235638 -0.483744" rpy="0 0 0" />
+        <parent link="fridge_0001" />
+        <child link="dof_rootd_Ba001_t" />
+        <axis xyz="1.0 0.0 2.22045e-16" />
+        <dynamics friction="0.7296427670420113" />
+        <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.17546906696179498"/>
+    </joint>
+    
+        
+    
+    <link name="dof_rootd_Ba002_t">
+        <inertial>
+            <origin xyz="0.31548 -0.235638 0.367993" />
+            <mass value="4.070265664291003" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="0.31548 -0.235638 0.367993" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba002_t.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.31548 -0.235638 0.367993" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba002_t.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="dof_rootd_Ba002_t" type="prismatic">
+        <origin xyz="-0.31548 0.235638 -0.367993" rpy="0 0 0" />
+        <parent link="fridge_0001" />
+        <child link="dof_rootd_Ba002_t" />
+        <axis xyz="1.0 0.0 2.22045e-16" />
+        <dynamics friction="0.22004291780520058" />
+        <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.1963220250432134"/>
+    </joint>
+    
+        
+    
+    <link name="dof_rootd_Ba003_t">
+        <inertial>
+            <origin xyz="0.315993 -0.235638 0.241258" />
+            <mass value="4.627750398617074" />
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+        </inertial>
+        <visual>
+            <origin xyz="0.315993 -0.235638 0.241258" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba003_t.obj" rpy="0 0 0" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.315993 -0.235638 0.241258" />
+            <geometry>
+                <mesh filename="package://scene_builder/assets/interactive/fridge_0001/dof_rootd_Ba003_t.obj" rpy="0 0 0" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="dof_rootd_Ba003_t" type="prismatic">
+        <origin xyz="-0.315993 0.235638 -0.241258" rpy="0 0 0" />
+        <parent link="fridge_0001" />
+        <child link="dof_rootd_Ba003_t" />
+        <axis xyz="1.0 0.0 2.22045e-16" />
+        <dynamics friction="0.6820094481200811" />
+        <limit effort="0.0" velocity="0.5" lower="0.0" upper="0.12175316474203558"/>
+    </joint>
+
+</robot>
+        

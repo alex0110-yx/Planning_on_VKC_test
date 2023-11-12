@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="robot_ashcan" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="ashcan" params="prefix:=ashcan parent:=world scale:=0.8 xyz rpy">
+        <xacro:property name="mesh_dir" value="package://env_description/household_env/assets/rigid/meshes" />
+        <joint name="${prefix}_world_joint" type="fixed">
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <parent link="${parent}" />
+            <child link="${prefix}_base_link" />
+        </joint>
+
+        <link name="${prefix}_base_link" />
+        <joint name="${prefix}_base_joint" type="fixed">
+            <origin xyz="0 0 ${0.35*scale}" rpy="${pi/2} 0 ${pi/2}" />
+            <parent link="${prefix}_base_link" />
+            <child link="${prefix}_base" />
+        </joint>
+
+        <link name="${prefix}_base">
+            <visual>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/ashcan/model_normalized.obj" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" />
+                <geometry>
+                    <mesh filename="${mesh_dir}/ashcan/model_normalized.obj" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+        </link>
+    </xacro:macro>
+</robot>

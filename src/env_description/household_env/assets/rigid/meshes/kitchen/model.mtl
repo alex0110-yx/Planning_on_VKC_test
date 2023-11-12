@@ -1,0 +1,315 @@
+newmtl ID6
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID6 - Default Texture.psd 
+
+newmtl ID12
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd material_4.jpg 
+
+newmtl ID29
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd material_3.jpg 
+
+newmtl ID50
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __CorrogateShiny_1.jpg 
+
+newmtl ID215
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd Stainless_Steel.jpg 
+
+newmtl ID521
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd material_3_0.jpg 
+
+newmtl ID698
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.317647 0.317647
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID698 - Default Texture.psd 
+
+newmtl ID714
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd Metal_Panel.jpg 
+
+newmtl ID763
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd electro_silver.jpg 
+
+newmtl ID786
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd aniseed.jpg 
+
+newmtl ID1073
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd electro_silver1.jpg 
+
+newmtl ID1083
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __White_.jpg 
+
+newmtl ID1125
+Ka 0.000000 0.000000 0.000000
+Kd 0.501961 0.501961 0.501961
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 0.400000
+Tr 0.600000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID1125 - Default Texture.psd 
+
+newmtl ID1135
+Ka 0.000000 0.000000 0.000000
+Kd 0.501961 0.501961 0.501961
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 0.780392
+Tr 0.219608
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID1135 - Default Texture.psd 
+
+newmtl ID1162
+Ka 0.000000 0.000000 0.000000
+Kd 0.662745 0.662745 0.662745
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID1162 - Default Texture.psd 
+
+newmtl ID1180
+Ka 0.000000 0.000000 0.000000
+Kd 0.137255 0.137255 0.137255
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID1180 - Default Texture.psd 
+
+newmtl ID1195
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __White__1.jpg 
+
+newmtl ID1815
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __CorrogateShiny_.jpg 
+
+newmtl ID2750
+Ka 0.000000 0.000000 0.000000
+Kd 0.501961 0.501961 0.501961
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID2750 - Default Texture.psd 
+
+newmtl ID3619
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID3619 - Default Texture.psd 
+
+newmtl ID3648
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.690196 0.800000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID3648 - Default Texture.psd 
+

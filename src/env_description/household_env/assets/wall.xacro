@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<robot name="wall_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+    <material name="gray">
+        <color rgba="0.9 0.9 0.9 1" />
+    </material>
+
+    <material name="dark gray">
+        <color rgba="0.75 0.75 0.75 1" />
+    </material>
+    <material name="brown">
+        <color rgba="0.918 0.608 0.196 1" />
+    </material>
+
+    <xacro:property name="wall_height" value="2.40" />
+    <xacro:property name="wall_thickness" value="0.05" />
+    <xacro:property name="pi" value="3.1415926" />
+
+    <xacro:macro name="wall" params="prefix:=wall parent:=world joint_type:=fixed xyz rpy length:=7 width:=8 scale:=1 color:=gray">
+        <link name="${prefix}"></link>
+
+        <joint name="${prefix}_joint_structure_joint" type="${joint_type}">
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <parent link="${parent}" />
+            <child link="${prefix}" />
+        </joint>
+
+        <link name="${prefix}_ground">
+            <visual>
+                <geometry>
+                    <box size="${length} ${width} 0.01" />
+                </geometry>
+                <material name="dark gray" />
+            </visual>
+            <collision>
+                <origin xyz="0 0 -0.05" rpy="0 0 0" />
+                <geometry>
+                    <box size="${length} ${width} 0.01" />
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${prefix}_ground" type="fixed">
+            <origin xyz="0 0 -0.01" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_ground" />
+        </joint>
+
+        <link name="${prefix}_main_left">
+            <visual>
+                <geometry>
+                    <box size="${length} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${length} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+
+        <joint name="${prefix}_joint_main_left" type="fixed">
+            <origin xyz="0 ${width / 2} ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_main_left" />
+        </joint>
+
+
+        <link name="${prefix}_main_right">
+            <visual>
+                <geometry>
+                    <box size="${length} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${length} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+
+        <joint name="${prefix}_joint_main_right" type="fixed">
+            <origin xyz="0 -${width / 2} ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_main_right" />
+        </joint>
+
+        <link name="${prefix}_main_front">
+            <visual>
+                <geometry>
+                    <box size="${wall_thickness} ${width+wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${wall_thickness} ${width+wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+
+        <joint name="${prefix}_joint_main_front" type="fixed">
+            <origin xyz="${length / 2} 0 ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_main_front" />
+        </joint>
+
+        <link name="${prefix}_main_back">
+            <visual>
+                <geometry>
+                    <box size="${wall_thickness} ${width+wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${wall_thickness} ${width+wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+
+        <joint name="${prefix}_joint_main_back" type="fixed">
+            <origin xyz="-${length/ 2} 0 ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_main_back" />
+        </joint>
+
+        <link name="${prefix}_room_left">
+            <visual>
+                <geometry>
+                    <box size="${length/2+wall_thickness} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${length/2+wall_thickness} ${wall_thickness} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+
+        <joint name="${prefix}_joint_room_left" type="fixed">
+            <origin xyz="-${length/4} 0 ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_room_left" />
+        </joint>
+
+        <link name="${prefix}_room_front_top">
+            <visual>
+                <geometry>
+                    <box size="${wall_thickness} ${width/7+wall_thickness} ${wall_height/4}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${wall_thickness} ${width/7+wall_thickness} ${wall_height/4}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+        <joint name="${prefix}_joint_room_front_top" type="fixed">
+            <origin xyz="0 ${width/14} ${wall_height/16+1.95}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_room_front_top" />
+        </joint>
+
+        <link name="${prefix}_room_front_right">
+            <visual>
+                <geometry>
+                    <box size="${wall_thickness} ${width*3/8-0.1} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${wall_thickness} ${width*3/8-0.15} ${wall_height}" />
+                </geometry>
+                <material name="${color}" />
+            </collision>
+        </link>
+        <joint name="${prefix}_joint_room_front_right" type="fixed">
+            <origin xyz="0 ${width*4/16 + 0.55} ${wall_height / 2}" rpy="0 0 0" />
+            <parent link="${prefix}" />
+            <child link="${prefix}_room_front_right" />
+        </joint>
+    </xacro:macro>
+</robot>
+        

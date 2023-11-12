@@ -1,0 +1,3013 @@
+<?xml version="1.0"?>
+
+<robot name="dishwasher_12065_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:macro name="dishwasher" params="prefix:=dishwasher parent:=world joint_type:=fixed xyz rpy scale:=1">
+		<xacro:property name="mesh_dir" value="package://env_description/household_env/assets/interactive/dishwasher_12065/textured_objs" />
+		<link name="${prefix}"></link>
+
+		<joint name="${prefix}_joint_structure_joint" type="${joint_type}">
+			<origin xyz="${xyz}" rpy="${rpy}" />
+			<parent link="${parent}" />
+			<child link="${prefix}" />
+		</joint>
+
+		<link name="${prefix}_link_0">
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-91.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-87.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-90.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-103.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-86.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-95.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-78.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-109.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-120.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-97.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-96.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-175.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-123.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-159.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-121.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-98.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-111.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-110.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-92.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-122.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-130.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-144.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-158.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-172.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-170.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-173.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-153.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-133.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-127.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-126.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-129.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-132.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-136.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-137.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-135.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-134.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-125.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-131.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-147.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-141.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-140.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-143.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-146.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-150.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-151.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-149.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-148.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-139.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-145.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-142.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-128.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-155.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-161.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-169.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-168.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-171.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-154.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-157.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-160.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-174.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-178.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-179.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-165.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-164.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-177.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-163.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-162.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-176.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-167.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-102.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-114.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-106.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-117.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-89.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-156.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-88.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-105.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-100.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-101.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-94.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-81.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-80.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-119.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-84.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-108.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-116.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-85.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-22">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-113.obj" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-91.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-87.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-90.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-103.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-86.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-95.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-78.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-109.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-120.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-97.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-96.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-175.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-123.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-159.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-121.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-98.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-111.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-110.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-92.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-122.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-130.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-144.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-158.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-172.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-170.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-173.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-153.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-133.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-127.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-126.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-129.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-132.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-136.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-137.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-135.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-134.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-125.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-131.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-147.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-141.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-140.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-143.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-146.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-150.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-151.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-149.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-148.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-139.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-145.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-142.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-128.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-155.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-161.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-169.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-168.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-171.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-154.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-157.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-160.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-174.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-178.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-179.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-165.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-164.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-177.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-163.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-162.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-176.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-167.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-102.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-114.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-106.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-117.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-89.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-156.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-88.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-105.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-100.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-101.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-94.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-81.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-80.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-119.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-84.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-108.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-116.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-85.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-113.obj" />
+				</geometry>
+			</collision>
+		</link>
+		<joint name="${prefix}_joint_0" type="prismatic">
+			<origin xyz="-0.3103312328582518 0.4748232119425434 ${0.3642530143260956-0.30800000000000005}" />
+			<axis xyz="0 0 1" />
+			<child link="${prefix}_link_0" />
+			<parent link="${prefix}_link_4" />
+			<limit effort="0.0" velocity="0.5" lower="0." upper="${0.34799999999999986+0.30800000000000005}" />
+		</joint>
+		<link name="${prefix}_link_1">
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-262.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-232.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-213.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-245.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-203.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-218.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-233.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-220.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-243.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-209.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-214.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-244.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-212.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-225.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-236.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-228.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-217.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-208.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-242.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-219.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-200.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-211.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-249.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-255.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-269.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-276.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-277.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-283.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-291.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-297.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-252.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-266.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-290.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-293.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-296.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-300.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-301.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-287.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-299.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-285.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-298.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-284.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-289.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-295.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-292.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-278.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-280.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-281.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-275.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-286.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-282.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-279.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-294.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-251.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-248.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-254.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-258.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-259.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-257.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-256.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-247.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-253.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-250.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-267.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-264.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-261.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-270.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-271.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-273.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-272.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-268.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-265.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-263.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-210.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-222.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-223.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-224.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-227.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-216.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-202.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-241.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-206.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-230.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-231.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-235.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-207.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-239.obj" />
+				</geometry>
+			</visual>
+			<visual name="shelf-24">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-238.obj" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-262.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-232.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-213.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-245.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-203.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-218.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-233.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-220.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-243.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-209.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-214.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-244.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-212.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-225.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-236.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-228.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-217.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-208.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-242.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-219.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-200.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-211.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-249.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-255.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-269.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-276.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-277.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-283.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-291.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-297.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-252.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-266.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-290.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-293.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-296.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-300.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-301.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-287.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-299.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-285.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-298.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-284.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-289.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-295.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-292.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-278.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-280.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-281.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-275.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-286.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-282.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-279.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-294.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-251.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-248.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-254.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-258.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-259.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-257.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-256.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-247.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-253.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-250.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-267.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-264.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-261.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-270.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-271.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-273.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-272.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-268.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-265.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-263.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-210.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-222.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-223.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-224.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-227.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-216.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-202.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-241.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-206.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-230.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-231.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-235.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-207.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-239.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-238.obj" />
+				</geometry>
+			</collision>
+		</link>
+		<joint name="${prefix}_joint_1" type="prismatic">
+			<origin xyz="-0.3103312328582518 0.4748232119425434 ${0.3642530143260956-0.1359999999999999}" />
+			<axis xyz="0 0 1" />
+			<child link="${prefix}_link_1" />
+			<parent link="${prefix}_link_4" />
+			<limit effort="0.0" velocity="0.5" lower="0.0" upper="${0.532+0.1359999999999999}" />
+		</joint>
+		<link name="${prefix}_link_2">
+			<visual name="door_frame-16">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-5.obj" />
+				</geometry>
+			</visual>
+			<visual name="door_frame-16">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-6.obj" />
+				</geometry>
+			</visual>
+			<visual name="door_frame-16">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-7.obj" />
+				</geometry>
+			</visual>
+			<visual name="handle-17">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-3.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-182.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-192.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-191.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-190.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-186.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-184.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-185.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-196.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-198.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-197.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-194.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-195.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-188.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-189.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-18">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-183.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-16.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-17.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-18.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-20.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-19.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-24.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-26.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-22.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-25.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-14.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-13.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-12.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-23.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-10.obj" />
+				</geometry>
+			</visual>
+			<visual name="hinge-19">
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-11.obj" />
+				</geometry>
+			</visual>
+			<!-- <collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-5.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-6.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-7.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-3.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-182.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-192.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-191.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-190.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-186.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-184.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-185.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-196.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-198.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-197.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-194.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-195.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-188.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-189.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-183.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-16.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-17.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-18.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-20.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-19.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-24.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-26.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-22.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-25.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-14.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-13.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-12.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-23.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-10.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.45992299914360046 0.5906908629302915 -0.2945464338364269" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-11.obj" />
+				</geometry>
+			</collision> -->
+		</link>
+		<joint name="${prefix}_joint_2" type="revolute">
+			<origin xyz="-0.45992299914360046 -0.5906908629302915 0.2945464338364269" rpy="-0.6457718232379019 0 0 "/>
+			<axis xyz="1 0 0" />
+			<child link="${prefix}_link_2" />
+			<parent link="${prefix}_link_4" />
+			<limit effort="0.0" velocity="0.5" lower="0." upper="${0.9250245035569946+0.6457718232379019}" />
+		</joint>
+		<link name="${prefix}_link_3">
+			<visual name="control_button-15">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-39.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-15">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-40.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-15">
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-47.obj" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-39.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-40.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0.3103312328582518 -0.4748232119425434 -0.3642530143260956" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-47.obj" />
+				</geometry>
+			</collision>
+		</link>
+		<joint name="${prefix}_joint_3" type="fixed">
+			<origin xyz="-0.3103312328582518 0.4748232119425434 0.3642530143260956" />
+			<axis xyz="0 0 1" />
+			<child link="${prefix}_link_3" />
+			<parent link="${prefix}_link_4" />
+		</joint>
+		<link name="${prefix}_link_4">
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-76.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-33.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-32.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-30.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-36.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-35.obj" />
+				</geometry>
+			</visual>
+			<visual name="frame-8">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-29.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-4">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-67.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-4">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-66.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-4">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-65.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-5">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-63.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-5">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-62.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-5">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-61.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-6">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-75.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-6">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-74.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-6">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-73.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-7">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-71.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-7">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-70.obj" />
+				</geometry>
+			</visual>
+			<visual name="foot-7">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-69.obj" />
+				</geometry>
+			</visual>
+			<visual name="display_panel-13">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-49.obj" />
+				</geometry>
+			</visual>
+			<visual name="display_panel-13">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-56.obj" />
+				</geometry>
+			</visual>
+			<visual name="display_panel-13">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-57.obj" />
+				</geometry>
+			</visual>
+			<visual name="display_panel-13">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-58.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_panel-14">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-42.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_panel-14">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-43.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-25">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-52.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-25">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-46.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-26">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-53.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-26">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-48.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-27">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-45.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-27">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-51.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-28">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-50.obj" />
+				</geometry>
+			</visual>
+			<visual name="control_button-28">
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-44.obj" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-76.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-33.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-32.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-30.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-36.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-35.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-29.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-67.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-66.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-65.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-63.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-62.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-61.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-75.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-74.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-73.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-71.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-70.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-69.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-49.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-56.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-57.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-58.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-42.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-43.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-52.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-46.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-53.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-48.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-45.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-51.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-50.obj" />
+				</geometry>
+			</collision>
+			<collision>
+				<origin xyz="0 0 0" />
+				<geometry>
+					<mesh filename="${mesh_dir}/original-44.obj" />
+				</geometry>
+			</collision>
+		</link>
+		<joint name="${prefix}_joint_4" type="fixed">
+			<origin rpy="1.570796326794897 0 -1.570796326794897" xyz="0 0 0" />
+			<child link="${prefix}_link_4" />
+			<parent link="${prefix}" />
+		</joint>
+
+
+	</xacro:macro>
+
+</robot>
+        

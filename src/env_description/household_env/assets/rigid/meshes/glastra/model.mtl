@@ -1,0 +1,120 @@
+newmtl ID9
+Ka 0.000000 0.000000 0.000000
+Kd 0.145098 0.407843 0.196078
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID9 - Default Texture.psd 
+
+newmtl ID23
+Ka 0.000000 0.000000 0.000000
+Kd 0.250980 0.537255 0.176471
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID23 - Default Texture.psd 
+
+newmtl ID103
+Ka 0.000000 0.000000 0.000000
+Kd 0.662745 0.729412 0.392157
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID103 - Default Texture.psd 
+
+newmtl ID110
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.690196 0.800000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID110 - Default Texture.psd 
+
+newmtl ID117
+Ka 0.000000 0.000000 0.000000
+Kd 0.541176 0.313726 0.298039
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID117 - Default Texture.psd 
+
+newmtl ID135
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __Concrete_.jpg 
+
+newmtl ID155
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd ID155 - Default Texture.psd 
+
+newmtl ID170
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 2.000000
+d 1.000000
+Tr 0.000000
+Pr 6.666667
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.000000
+map_Kd __Stucco2_.jpg 
+
